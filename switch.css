@@ -1,0 +1,44 @@
+.label1 {
+  width:60vw;
+  height:50vh;
+  position:relative;
+  display:inline-block;
+  
+}
+
+input:checked + .box {
+  background-color:green;
+}
+.box.round:before {
+  border-radius: 50vh;
+}
+input:checked + .box:before {
+  transform:translate(90%);
+}
+.box {
+  left:0;
+  bottom:0;
+  border-radius:50vh;
+  position: absolute;
+  cursor: pointer;
+  top:0;
+  right:0;
+  background-color:grey;
+  transition:1s;
+}
+
+.box:before {
+  content:"";
+  left:2%;
+  bottom:5%;
+  background-color:white;
+  transition:1s;
+  
+  height:45vh;
+  width:30vw;
+  position:absolute;
+
+}
+
+
+
